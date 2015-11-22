@@ -1,5 +1,9 @@
+print(getArgument())
 print("importing .tiff files");
-run("Image Sequence...", "open=/Users/se/workspace/tiff2stl/tiffs scale=50 sort");
+var name = getArgument();
+var imgSequence = "open=./" + name +"/ scale=50 sort";
+print(imgSequence);
+run("Image Sequence...", imgSequence);
 setOption("BlackBackground", false);
 print("converting .tiff files to binary images");
 run("Make Binary", "method=MaxEntropy background=Dark calculate black");
@@ -7,9 +11,10 @@ run("Make Binary", "method=MaxEntropy background=Dark calculate black");
 run("3D Viewer");
 call("ij3d.ImageJ3DViewer.setCoordinateSystem", "false");
 print("converting .tiff to 3D rendering");
-call("ij3d.ImageJ3DViewer.add", "tiffs", "White", "tiffs", "50", "true", "true", "true", "2", "2");
-call("ij3d.ImageJ3DViewer.select", "tiffs");
+call("ij3d.ImageJ3DViewer.add", name, "White", name, "50", "true", "true", "true", "2", "2");
+call("ij3d.ImageJ3DViewer.select", name);
 print("exporting 3D rendering to .stl");
-call("ij3d.ImageJ3DViewer.exportContent", "STL ASCII", "/Users/se/workspace/tiff2stl/final.stl");
+var filename = "./" + name + ".stl";
+call("ij3d.ImageJ3DViewer.exportContent", "STL ASCII", filename);
 print("exiting");
 run("Quit");

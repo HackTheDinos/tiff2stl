@@ -1,2 +1,2 @@
 #!/bin/bash
-ImageJ --memory=16384 -macro tiff2stl.ijm
+ImageJ --memory=16384 -macro tiff2stl.ijm $1 $2
