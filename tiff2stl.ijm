@@ -12,4 +12,4 @@ call("ij3d.ImageJ3DViewer.select", "tiffs");
 print("exporting 3D rendering to .stl");
 call("ij3d.ImageJ3DViewer.exportContent", "STL ASCII", "/Users/se/workspace/tiff2stl/final.stl");
 print("exiting");
-exit;
+run("Quit");
