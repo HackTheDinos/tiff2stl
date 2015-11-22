@@ -1,0 +1,26 @@
+makeRectangle(172, 61, 476, 476);
+run("Cut");
+run("Undo");
+makeRectangle(1, 1, 224, 594);
+makeRectangle(1, 1, 224, 594);
+run("Cut");
+makeRectangle(0, 437, 800, 163);
+run("Cut");
+makeRectangle(205, 2, 595, 79);
+run("Cut");
+makeRectangle(205, 2, 595, 79);
+makeRectangle(604, 0, 196, 560);
+run("Cut");
+makeRectangle(55, 0, 48, 171);
+makeRectangle(9, 0, 3, 173);
+makeRectangle(0, 28, 86, 88);
+makeRectangle(12, 0, 788, 78);
+run("Cut");
+makeRectangle(679, 0, 121, 600);
+run("Cut");
+makeRectangle(679, 0, 121, 600);
+makeRectangle(0, 436, 798, 164);
+run("Cut");
+makeRectangle(0, 0, 161, 598);
+run("Cut");
+
