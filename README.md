@@ -9,6 +9,7 @@ Project uses ImageJ macros to translate  a collection of greyscale catscans .tif
 ### or screen shots:
 ![alt tag](https://raw.githubusercontent.com/HackTheDinos/tiff2stl/master/examples/stl-gavia.png)
 ![alt tag](https://raw.githubusercontent.com/HackTheDinos/tiff2stl/master/examples/stl-zanabazar.png)
+![alt tag](https://raw.githubusercontent.com/HackTheDinos/tiff2stl/master/examples/stl-gavia-brain.png)
 
 
 #### Usage Notes:
