@@ -14,3 +14,7 @@ Project uses ImageJ macros to translate  a collection of greyscale catscans .tif
 
 #### Usage Notes:
 Assumes you have ImageJ installed. At the moment of writing, 3D transforms are broken with ImageJ using Java 8, and are most reliable with Java 6.
+
+To run it, `cd` into the tiff2stl project. Place a directory of .tiff files, or a .tiff stack, and name the directory the name you'd like for the final file.
+
+Running ```./tiff2stl yourDirectoryName``` will output a file named ```yourDirectoryName.stl```.
